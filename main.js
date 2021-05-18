@@ -67,23 +67,23 @@
 // console.log(person.hobbies[1]);
 // console.log(person.address.city);
 
-const todos = [
-  {
-    id: 1,
-    text: 'Invite her over',
-    isCompleted: true,
-  },
-  {
-    id: 2,
-    text: 'Meetin with Boss',
-    isCompleted: true,
-  },
-  {
-    id: 3,
-    text: 'Need to call Deji',
-    isCompleted: false,
-  },
-];
+// const todos = [
+//   {
+//     id: 1,
+//     text: 'Invite her over',
+//     isCompleted: true,
+//   },
+//   {
+//     id: 2,
+//     text: 'Meeting with Boss',
+//     isCompleted: true,
+//   },
+//   {
+//     id: 3,
+//     text: 'Need to call Deji',
+//     isCompleted: false,
+//   },
+// ];
 // console.log(todos[1].text);
 
 //converting to Json so we can connect it to a server
@@ -107,6 +107,48 @@ const todos = [
 // }
 
 // LOOPING INTO ARRAYS
-for (let todo of todos) {
-  console.log(todos.text);
+// for (let todo of todos) {
+//   console.log(todos.id);
+// }
+
+// HIGH ORDER ARRAY METHODS
+// forEach, Map, filter
+
+// todos.forEach(function (todo) {
+//   console.log(todo.text);
+// });
+
+// // for map
+// const todoText = todos.map(function (todo) {
+//   return todo.text;
+// });
+
+// console.log(todoText);
+
+// // filter
+// const todoCompleted = todos
+//   .filter(function (todo) {
+//     return todo.isCompleted === true;
+//   })
+//   .map(function (todo) {
+//     return todo.text
+//   });
+
+// console.log(todoCompleted);
+
+// const x = 30;
+
+// if (x === 10) {
+//   console.log('x is 10');
+// } else if (x > 10) {
+//   console.log('x is greater than 10');
+// } else {
+//   console.log('x is less 10');
+// }
+
+const x = 5;
+const y = 10;
+
+if (x > 6 || y > 10) {
+  console.log('x is greater than 6 or y is greater than 10');
 }
