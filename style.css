@@ -16,7 +16,7 @@ ul {
   list-style: none;
 }
 
-.items ul li {
+ul li {
   padding: 5px;
   background: #f4f4f4;
   margin: 5px 0;
