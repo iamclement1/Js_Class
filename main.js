@@ -195,26 +195,26 @@
 //   return `${this.firstName} ${this.lastName}`;
 // };
 
-// class
-class Person {
-  constructor(firstName, lastName, dob){
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.dob = new Date(dob);
-  }
+// // class
+// class Person {
+//   constructor(firstName, lastName, dob){
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob);
+//   }
 
-  getBirthYear(){
-    return this.dob.getFullYear();
-  }
+//   getBirthYear(){
+//     return this.dob.getFullYear();
+//   }
 
-  getFullName(){
-    return `${this.firstName} ${this.lastName}`;
-  }
-}
+//   getFullName(){
+//     return `${this.firstName} ${this.lastName}`;
+//   }
+// }
 
 // Instantiate Object
-const person1 = new Person('Clement', 'Nnamdi', '01-12-1994');
-const person2 = new Person('Mary', 'Taiwo', 1 - 1 - 1991);
+// const person1 = new Person('Clement', 'Nnamdi', '01-12-1994');
+// const person2 = new Person('Mary', 'Taiwo', 1 - 1 - 1991);
 
-console.log(person1);
-console.log(person2.getFullName());
+// console.log(person1);
+// console.log(person2.getFullName());
