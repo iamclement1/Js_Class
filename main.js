@@ -146,9 +146,75 @@
 //   console.log('x is less 10');
 // }
 
-const x = 5;
-const y = 10;
+// const x = 7;
+// const y = 11;
 
-if (x > 6 || y > 10) {
-  console.log('x is greater than 6 or y is greater than 10');
+// if (x > 6 && y > 10) {
+//   console.log('x is greater than 6 or y is greater than 10');
+// }
+
+//Tenary Operator
+// const x = 101;
+// const color = x > 10 ? 'red' : 'blue';
+
+// switch (color) {
+//   case 'red':
+//     console.log('color is red');
+//     break;
+
+//   case 'blue':
+//     console.log('color is blue');
+//     break;
+
+//   default:
+//     console.log('color is NOT red or blue');
+//     break;
+// }
+
+// function addNums(num1, num2) {
+//   // console.log(num1 + num2);
+//   return num1 + num2
+// }
+
+// console.log(addNums(5, 4));
+
+// OBJECT PROGRAMMING
+
+// Constructor Function
+// function Person(firstName, lastName, dob) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.dob = new Date(dob);
+// }
+
+// Person.prototype.getBirthYear = function () {
+//   return this.dob.getFullYear();
+// };
+
+// Person.prototype.getFullName = function () {
+//   return `${this.firstName} ${this.lastName}`;
+// };
+
+// class
+class Person {
+  constructor(firstName, lastName, dob){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+  }
+
+  getBirthYear(){
+    return this.dob.getFullYear();
+  }
+
+  getFullName(){
+    return `${this.firstName} ${this.lastName}`;
+  }
 }
+
+// Instantiate Object
+const person1 = new Person('Clement', 'Nnamdi', '01-12-1994');
+const person2 = new Person('Mary', 'Taiwo', 1 - 1 - 1991);
+
+console.log(person1);
+console.log(person2.getFullName());
